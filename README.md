@@ -5,9 +5,13 @@ In this project We'd like to show you a basic payment flow using Stepper Compone
 
 #ScreenShots
 
-![Image of OrbisMobile](Screenshots/screenshot1.png)
-![Image of OrbisMobile](Screenshots/screenshot2.png)
+<p align="center">
+  <img src="Screenshots/screenshot1.png" alt="Screenshots1" width="50%"/>
+</p>
 
+<p align="center">
+  <img src="Screenshots/screenshot2.png" alt="Screenshots2" width="50%"/>
+</p>
 
 #Support
 
