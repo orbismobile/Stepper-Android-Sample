@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Fragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tieCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNone"
+            android:inputType="number"
+            android:digits="01234 56789"
+            android:maxLength="19"
+            android:singleLine="true"
+            android:hint="@string/card"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:id="@+id/txtCardExpiryMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="5"
+            android:hint="MM"
+            android:inputType="number"
+            android:maxLength="2"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/txtCardExpiryYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="5"
+            android:hint="YYYY"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtCardCVV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:hint="CVV"
+        android:inputType="number"
+        android:maxLength="4"
+        android:singleLine="true" />
+
+
+</LinearLayout>

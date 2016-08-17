@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Stepper</string>
+    <string name="names">Nombres</string>
+    <string name="lastname">Apellidos</string>
+    <string name="back">Anterior</string>
+    <string name="next">Siguiente</string>
+    <string name="data">Datos</string>
+    <string name="address">Dirección</string>
+    <string name="shipping">Envío</string>
+    <string name="payment">Pago</string>
+    <string name="message_back">Para salir, presione nuevamente la tecla Back</string>
+    <string name="confirmation">Confirmación</string>
+    <string name="confirmation_screen">Pantalla de Confirmación</string>
+    <string name="card">Tarjeta de Crédito</string>
+    <string name="error_name">Ingrese Nombres</string>
+    <string name="error_lastname">Ingrese Apellidos</string>
+    <string name="error_address">Ingrese Dirección</string>
+    <string name="error_card">Ingrese Número de Tarjeta de Crédito</string>
+    <string name="data_entered">Datos Ingresados</string>
+    <string name="message_confirmation">Nombres: %1$s \n Apellidos: %2$s \n Dirección: %3$s \n Tarjeta: %4$s</string>
+</resources>

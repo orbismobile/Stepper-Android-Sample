@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Activity"
+    android:fitsSystemWindows="true"
+    tools:context="pe.comercio.stepper.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+        <pe.comercio.stepper.view.component.CustomViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@color/md_white_1000"
+        android:baselineAligned="false">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/back"
+            style="@style/ButtonStepper"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:enabled="false"
+            android:drawableStart="@drawable/ic_keyboard_arrow_left_grey"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_left_grey"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <pe.comercio.stepper.view.component.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@android:color/white"
+                app:strokeColor="@color/colorAccent"
+                app:fillColor="@color/colorAccent"
+                app:centered="true"
+                app:radius="5sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/next"
+            style="@style/ButtonStepper"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:enabled="true"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_grey"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_grey"/>
+
+    </LinearLayout>
+
+</merge>

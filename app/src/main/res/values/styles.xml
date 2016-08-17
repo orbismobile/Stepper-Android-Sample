@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="Fragment">
+        <item name="android:background">@color/md_grey_300</item>
+        <item name="android:padding">@dimen/fragment_padding</item>
+    </style>
+
+    <style name="Activity">
+        <item name="android:background">@color/md_grey_500</item>
+    </style>
+
+    <style name="ButtonStepper">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/text_size_stepper</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>
